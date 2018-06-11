@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+html,
+ul,
+li,
+dl,
+dd,
+ol,
+p,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0px;
+  padding: 0px;
+  font-family: "microsoft yahei";
+  color: #333;
+  list-style: none;
+  font-size: 100%;
+}
+
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+select,
+button,
+textarea {
+  font-family: inherit;
+  font-weight: normal;
+  font-family: "microsoft yahei";
+  color: #333;
+  font-size: 100%;
+}
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+  display: block
+}
+
+
+/*html5*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+i,
+pre {
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea,
+select {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+
+a:link {
+  color: #333;
+}
+
+a:visited {
+  color: #333;
+  outline: none;
+}
+
+a:hover {
+  color: #333;
+  outline: none;
+}
+
+a:active {
+  color: #333;
+  outline: none;
+}
+
+img,
+fieldset {
+  border: none;
+  vertical-align: top;
+}
+
+.fl {
+  float: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  outline: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: middle;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+a,
+label,
+button,
+input,
+select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+select,
+button {
+  font: 100%;
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.main {
+  max-width: 7.5rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  font-size: 0.28rem;
+}
+
+.loginbg {
+  background: url(../../..//images/bg.jpg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  padding: 0.5rem 0.44rem;
+}
+
+.languanes {
+  text-align: right;
+}
+
+.languanes select {
+  background: transparent;
+  width: 1.42rem;
+  padding: 5px;
+  font-size: 16px;
+  border: transparent;
+  height: 34px;
+  background: url(../../../images/account/arrow_b.png) no-repeat right center;
+  background-size: 0.22rem 0.11rem;
+  -webkit-appearance: none;
+  /*for chrome*/
+  color: #fff;
+}
+
+.logo {
+  width: 3.32rem;
+  height: 2.47rem;
+  margin: 0.55rem auto;
+}
+
+.logo img {
+  width: 3.32rem;
+  height: 2.47rem;
+}
+
+.groupinput input,
+.grupform button{
+  width: 100%;
+  height: 0.97rem;
+  border-radius: 0.5rem;
+  padding-left: 0.4rem;
+  background: rgba(188, 31, 56, 0.57);
+  color: #fff;
+  margin-bottom: 0.41rem;
+}
+
+.grupform input::input-placeholder {
+  color: #f00;
+}
+
+.grupform input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.grupform input::-moz-input-placeholder {
+  color: #fff;
+}
+
+.grupform input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.grupform button {
+  background: #fed964;
+  letter-spacing: 1px;
+  color: #3d2e00;
+  font-size: 0.30rem;
+  border: none;
+}
+
+.grupform p a {
+  color: #fff;
+}
+
+.groupreg input::input-placeholder {
+  color: #999;
+}
+
+.groupreg input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.groupreg input::-moz-input-placeholder {
+  color: #999;
+}
+
+.groupreg input:-ms-input-placeholder {
+  color: #999;
+}
+/*.groupreg input:-ms-input-placeholder {*/
+  /*color: #999 !important;*/
+/*}*/
+footer {
+  color: #f37c8f;
+  position: fixed;
+  left: 15%;
+  bottom: 0.3rem;
+  font-size: 0.20rem;
+  letter-spacing: 1px;
+  font-family: "arial, helvetica, sans-serif";
+}
+
+
+/*用户注册页面*/
+
+header {
+  background: #eb3a57;
+  color: #fff;
+  position: relative;
+  height: 0.88rem;
+  line-height: 0.88rem;
+}
+
+header p {
+  text-align: center;
+  color: #fff;
+}
+
+header i {
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  font-size: 0.28rem;
+}
+
+.groupreg {
+  margin: 0.15rem 0;
+}
+
+.groupreg label {
+  background: #fff;
+  border-bottom: 1px #dedede solid;
+  position: relative;
+  color: #898889;
+  line-height: 1.14rem;
+  padding-left: 0.27rem;
+  display: block;
+  height: 1.14rem;
+}
+
+.groupreg label:nth-child(3) {
+  border-bottom: none;
+}
+
+.groupreg label span {
+  display: inline-block;
+  width: 1.38rem;
+  text-align: left;
+  color: #898889;
+}
+
+.groupreg .verfcode {
+  position: absolute;
+  right: 3%;
+  top: 0;
+}
+
+.groupreg .verfcode a,
+.groupreg .verfcode p {
+  display: inline-block;
+  width: 2.32rem;
+  height: 0.80rem;
+  line-height: 0.80rem;
+  border-radius: 0.1rem;
+  text-align: center;
+  color: #fff;
+  background: #e93854;
+}
+
+.groupreg .verfcode p {
+  background: #ccc;
+}
+
+.groupreg button{
+  background: #e93854;
+  width: 90%;
+  margin: 0.5rem auto 0;
+  display: block;
+  color: #fff;
+}
+
+.groupreg h6 {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.groupreg h6 input[type="checkbox"]{
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px #ccc solid;
+}
+.groupreg fieldset{
+  padding-top: 1rem;
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.groupreg fieldset figure{
+  display: block;
+  float: left;
+}
+.groupreg fieldset figure i{
+  font-size: 0.8rem;
+  color: #22e550;
+
+}
+.groupreg .checkEmail{
+  float: left;
+  width: 80%;
+  margin-left: 0.2rem;
+
+}
+.groupreg .checkEmail h2{
+  font-size: 0.32rem;
+}
+.groupreg .checkEmail p{
+   font-size: 0.24rem;
+  padding-top: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

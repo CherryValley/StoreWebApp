@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>爱宠族 用户登录</title>
+  <link rel="stylesheet" href="/stylesheets/view/account/login.css" />
+  <script type="text/javascript" src="/javascripts/view/font.js"></script>
+  <script src="/javascripts/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+  <script src="/javascripts/layer/layer.js"></script>
+  <script src="/javascripts/view/account/login.js"></script>
+  <script src="/javascripts/view/common.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="loginbg"></div>
+  <section class="login">
+    <article class="languanes">
+      <select name="" id="languanes">
+        <option value="cn" selected='selected'>中文</option>
+        <option value="en">English</option>
+      </select>
+    </article>
+    <article class="logo">
+      <img src="images/account/logo.png" alt="" />
+    </article>
+    <article class="grupform">
+      <form>
+        <div class="groupinput">
+          <input type="text" id="user-name" placeholder="" />
+        </div>
+        <div class="groupinput">
+          <input type="password" id="password" placeholder=""/>
+        </div>
+        <button type="button" class="btn-login">
+          <span class="lan-cn">登 陆</span>
+          <span class="lan-en hidden">Login</span>
+        </button>
+        <input type="hidden" value="{{target}}" id="hidden-target">
+      </form>
+      <p>
+        <a href="register" >
+          <span class="lan-cn">新用户注册</span>
+          <span class="lan-en hidden">Register</span>
+        </a>
+        <a href="/forgetPassword"  class="fl">
+          <span class="lan-cn">忘记密码？</span>
+          <span class="lan-en hidden">Forget Password？</span>
+        </a>
+      </p>
+    </article>
+    <footer>Copyright(c) LUVPET Corp.All Rights Reserved</footer>
+  </section>
+</div>
+</body>
+</html>

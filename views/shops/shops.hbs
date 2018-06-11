@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/basic.css" />
+  <link rel="stylesheet" href="/stylesheets/iconfont.css" />
+  <script type="text/javascript" src="/javascripts/view/font.js"></script>
+  <link rel="stylesheet" href="/stylesheets/view/index/swiper.min.css">
+  <link rel="stylesheet" href="/stylesheets/view/shops/itemsgoods.css" />
+  <script src="/javascripts/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    /*.swiper-button-prev {*/
+      /*background: url(../../../images/shops/arrows.png) no-repeat left top;*/
+      /*position: absolute;*/
+      /*left: 0;*/
+      /*top: 50%;*/
+      /*margin-top: -15px;*/
+      /*width: 17px;*/
+      /*height: 30px;*/
+      /*z-index: 9999;*/
+    /*}*/
+    /*.swiper-button-next{*/
+      /*background: url(../../../images/shops/arrows.png) no-repeat right bottom;*/
+      /*position: absolute;*/
+      /*right: 0;*/
+      /*top: 50%;*/
+      /*margin-top: -15px;*/
+      /*width: 17px;*/
+      /*height: 30px;*/
+      /*z-index: 9999;*/
+    /*}*/
+    .swiper-slide{
+      width: 3.88rem;
+      height: 3rem;
+      margin: 0 auto;
+      text-align: center;
+      position:relative;
+    }
+    .swiper-slide img{
+      max-width: 3.88rem;
+      max-height: 3rem;
+      margin: 0 auto;
+    }
+    .swiper-pagination {
+      position: absolute;
+      text-align: center;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      z-index: 10
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      position: absolute;
+      bottom: 0;
+      right:0!important;
+      width: 100%
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      width: 100%
+    }
+    .swiper-pagination{
+      background: #ccc;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      font-size: 0.28rem;
+      color: #fff;
+      line-height: 0.8rem;
+    }
+
+  </style>
+</head>
+
+<body bgcolor="#f5f1f9">
+<!--<div class="main">-->
+<header>
+  <a href="#" class="goodslist_arrow"><i class="iconfont icon-left-arrow"></i></a>
+ <div class="find_nav">
+    <div class="find_nav_left">
+      <div class="find_nav_list clearfix" id="pagenavi1">
+        <ul>
+          <li>
+            <a href="#" class="lan-cn">商品</a>
+            <a href="#" class="lan-en hidden">goods</a>
+          </li>
+          <li>
+            <a href="#" class="lan-cn">详情</a>
+            <a href="#" class="lan-en hidden">details</a>
+          </li>
+          <li>
+            <a href="#" class="lan-cn">评价</a>
+            <a href="#" class="lan-en hidden">evaluation</a>
+          </li>
+          <li class="sideline"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div id="slider1" class="swipe">
+    <ul>
+      <li>
+        <div class="main">
+          <section class="items-title">
+            <article class="items-goods-img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/images/shops/itemsgoods.jpg"  alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/shops/goods.jpg"  alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/shops/itemsgoods.jpg"  alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/shops/goods.jpg"  alt="" />
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- Add Arrows -->
+                  <!--<div class="swiper-button-next"></div>-->
+                  <!--<div class="swiper-button-prev"></div>-->
+                </div>
+            </article>
+            <article class="items-title-text">
+              <h1 class="lan-cn">爱宠族 LUVPET系列 狗用背心 条纹蓝色条纹拼接蓝色 SS码(带宽10mm)</h1>
+              <h1 class="lan-en hidden">Pet LUVPET series dogs spliced blue SS codes with waistcoat striped blue stripes (bandwidth 10mm)</h1>
+              <p>
+              <span class="lan-cn">商品材质 ：尼龙全涤春亚纺</span>
+              <span class="lan-en hidden">Product material: nylon polyester spring sub-fabric</span>
+              <span class="lan-cn">可调尺寸：25～40cm</span>
+              <span class="lan-en hidden">Adjustable size: 25 ~ 40cm</span>
+              </p>
+            </article>
+            <article class="items-title-price">
+              ￥<em>169.00</em>
+            </article>
+          </section>
+          <section class="choose_color">
+              <div class="goods-details-cont">
+              <span class="lan-cn">已选</span> 
+              <span class="lan-en hidden">The selected</span>
+              <em class="lan-cn">条纹拼接蓝色，M，1件</em>
+              <em class="lan-en hidden">Stripe Mosaic blue, M, 1 piece</em>
+              <i class="iconfont icon-sandian1 clickwn"></i></div>
+          </section>
+          <section class="choose_color">
+            <div class="goods-details-cont"><a href="/addAdress"> <span>送至</span> 
+            <em class="lan-cn">陕西 西安 未央区 三环以外</em>
+            <em class="lan-en hidden">Outside the third ring of weiyang district, xi 'an, shaanxi province</em>
+            <i class="iconfont icon-right"></i></a></div>
+          </section>
+          <section class="items-product-evaluation">
+            <figure>
+              <h1>
+              <span class="lan-cn">商品评价</span>
+              <span class="lan-en hidden">Product evaluation</span>
+              (<em>31</em>)</h1>
+              <a href="#">
+              <span class="lan-cn">好评度</span>
+              <span class="lan-en hidden">rating</span>
+              <em>100%</em> <i class="iconfont icon-right"></i></a>
+            </figure>
+            <article class="evaluation-list clearfix">
+
+                <div class="evaluation-list-cont">
+                  <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                  <div class="eval_text">
+                    <p><span>150***852</span><span>2018-5-21</span></p>
+                    <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                    <div class="eval_cont">
+                      <span class="lan-cn">圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，
+                      红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身</span>
+                       <span class="lan-en hidden">Christmas also gives your favorite to change into clothes to sell cute, concave shapes,Red wool cloth and plush ball do not feel the thick holiday flavor, this style is easy to wear only need to put on the front foot can be transforme</span>
+                    </div>
+                    <p>
+                    <span class="lan-cn">黄底白色五角星</span>
+                    <span class="lan-en hidden">Yellow ground white star</span>
+                    <span class="lan-cn">购买日期：2018-03-03</span>
+                    <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="evaluation-list-cont">
+                  <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                  <div class="eval_text">
+                    <p><span>150***852</span><span>2018-5-21</span></p>
+                    <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                    <div class="eval_cont">
+                      <span class="lan-cn">圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，
+                      红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身</span>
+                       <span class="lan-en hidden">Christmas also gives your favorite to change into clothes to sell cute, concave shapes,Red wool cloth and plush ball do not feel the thick holiday flavor, this style is easy to wear only need to put on the front foot can be transforme</span>
+                    </div>
+                    <p>
+                    <span class="lan-cn">黄底白色五角星</span>
+                    <span class="lan-en hidden">Yellow ground white star</span>
+                    <span class="lan-cn">购买日期：2018-03-03</span>
+                    <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                    </p>
+                </div>
+                <div class="evaluation-list-cont">
+                  <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                  <div class="eval_text">
+                    <p><span>150***852</span><span>2018-5-21</span></p>
+                    <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                    <div class="eval_cont">
+                      <span class="lan-cn">圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，
+                      红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身</span>
+                       <span class="lan-en hidden">Christmas also gives your favorite to change into clothes to sell cute, concave shapes,Red wool cloth and plush ball do not feel the thick holiday flavor, this style is easy to wear only need to put on the front foot can be transforme</span>
+                    </div>
+                    <p>
+                    <span class="lan-cn">黄底白色五角星</span>
+                    <span class="lan-en hidden">Yellow ground white star</span>
+                    <span class="lan-cn">购买日期：2018-03-03</span>
+                    <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                    </p>
+                </div>
+
+            </article>
+
+          </section>
+
+          <!-- 弹出 -->
+          <div class="flick-menu-mask" style=""></div>
+          <div class="spec-menu">
+            <div class="spec-menu-content spec-menu-show" style="display: block;">
+              <div class="spec-menu-top bdr-b">
+                <div class="spec-first-pic"> <img id="spec_image" src="/images/shops/goods.jpg" /> </div>
+                <div class="spec-price">
+                  <p>￥599.00</p>
+                  <p class="lan-cn">商品编号：22689546</p>
+                  <p class="lan-en hidden">Product number: 22689546</p>
+                </div>
+                <a class="tclck">
+                  <i class="iconfont icon-close"></i>
+                </a>
+              </div>
+              <div class="spec-menu-middle">
+
+                <div class="prod-spec" id="prodSpecArea">
+                  <!-- 已选 -->
+                  <div class="spec-desc"> 
+                  <span class="part-note-msg lan-cn">已选</span>
+                  <span class="part-note-msg lan-en hidden">The selected</span>
+                    <div id="specDetailInfo_spec" class="base-txt"> 
+                    <em class="lan-cn">白色 直袖款</em>
+                    <em class="lan-en hidden">White straight sleeve</em>
+                     &nbsp;&nbsp; <span class="amount">1</span>
+                     <em class="lan-cn">件</em>
+                     <em class="lan-en hidden">a</em>
+                     </div>
+                  </div>
+                  <div class="nature-container clearfix" id="natureCotainer">
+                    <!--颜色 5.5版本之前的规格属性-->
+                    <div class="pro-color"> 
+                    <span class="part-note-msg lan-cn"> 颜色 </span>
+                    <span class="part-note-msg lan-en hidden"> color </span>
+                      <p id="color">
+                        <a title="条纹拼接蓝色" class="selected lan-cn" report-eventparam="条纹拼接蓝色">条纹拼接蓝色</a>
+                        <a title="Striped Mosaic blue" class="selected lan-en hidden" report-eventparam="Striped Mosaic blue">Striped Mosaic blue</a>
+                        <a title="蓝色 直袖款" report-eventparam="蓝色 直袖款" class="lan-cn" >米色圆点</a>
+                        <a title="蓝色 直袖款" report-eventparam="蓝色 直袖款" class="lan-en hidden" >Beige dot</a>
+                        <a title="黑色 直袖款" report-eventparam="黑色 直袖款" class="lan-cn">迷彩绿</a>
+                        <a title="黑色 直袖款" report-eventparam="黑色 直袖款" class="lan-en hidden">Camouflage green</a>
+                        <a title="灰色 直袖款" report-eventparam="灰色 直袖款" class="lan-cn">条纹粉</a>
+                        <a title="灰色 直袖款" report-eventparam="灰色 直袖款" class="lan-en hidden">Stripe powder</a>
+                        <a title="粉色 直袖款" report-eventparam="粉色 直袖款" class="lan-cn">青年蓝</a>
+                        <a title="粉色 直袖款" report-eventparam="粉色 直袖款" class="lan-en hidden">Youth is blue</a>
+                        <a title="紫色 直袖款" report-eventparam="紫色 直袖款" class="lan-cn">格子红</a>
+                        <a title="紫色 直袖款" report-eventparam="紫色 直袖款" class="lan-en hidden">Red grid</a>
+                      </p>
+                    </div>
+                    <!--尺寸-->
+                  </div>
+                  <!--尺寸-->
+                  <!--数量-->
+                  <div id="addCartNum" class="pro-count">
+                    <span class="part-note-msg" lan-cn>数量</span>
+                    <span class="part-note-msg" lan-en hidden>The number of</span>
+                    <div class="num">
+                      <p class="jian"><i class="iconfont icon-jiajian-"></i></p>
+                      <input id="cool" class="inputBorder" value="1" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')" type="text" maxlength="5" placeholder="数量" />
+                      <p class="jia"><i class="iconfont icon-weibiaoti37"></i></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="flick-menu-btn">
+                <a href="#" class="lan-cn">立即购买</a>
+                <a href="#" class="lan-en hidden">Buy now</a>
+                <a href="#" class="lan-cn">加入购物车</a>
+                <a href="#" class="lan-en hidden">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+
+        <div class="main">
+          <section class="choose_color" style="margin-top: 0;">
+            <div class="goods-details-cont">
+              <p>
+              <span class="lan-cn">商品详情</span>
+              <span class="lan-en hidden">Goods details</span>
+              </p>
+            </div>
+          </section>
+          <section class="goodsdetails">
+            <h1 class="lan-cn">品牌: 疯狂设计师</h1>
+            <h1 class="lan-en hidden">Brand: crazy designer</h1>
+            <table border="1" cellspacing="0">
+              <tr>
+                <td>
+                <em class="lan-cn">商品编号</em>
+                <em class="lan-en hidden">Product id</em>
+                </td>
+                <td> BHR17171</td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品名称</em>
+                <em class="lan-en hidden">Name of commodity</em>
+                </td>
+                <td>
+                  <p class="lan-cn">脖圈</p>
+                  <p class="lan-en hidden">collar</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品颜色</em>
+                <em class="lan-en hidden">Commodity color</em>
+                </td>
+                <td>
+                  <p class="lan-cn">黄底白色五角星</p>
+                  <p class="lan-en hidden">Yellow ground white star</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品分类</em>
+                <em class="lan-en hidden">Classification of goods</em>
+                </td>
+                <td>
+                  <p class="lan-cn">脖圈</p>
+                  <p class="lan-en hidden">collar</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品尺寸</em>
+                <em class="lan-en hidden">Goods size=</em>
+                </td>
+                <td>
+                  <p class="lan-cn">S码(带宽15mm)</p>
+                  <p class="lan-en hidden">S code (bandwidth 15mm)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品制造地</em>
+                <em class="lan-en hidden">Place of manufacture</em>
+                </td>
+                <td>
+                  <p class="lan-cn">中国</td>
+                  <p class="lan-en hidden">China</td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">商品材质</em>
+                <em class="lan-en hidden">Material goods</em>
+                </td>
+                <td>
+                  <p class="lan-cn">尼龙全涤春亚纺</p>
+                  <p class="lan-en hidden">Nylon polyester spring sub-fabric</p>
+                </td>
+              </tr>
+
+            </table>
+            <table border="1" cellspacing="0" cellpadding="0" style="margin-top: 0.2rem;">
+              <tr>
+                <td>
+                <em class="lan-cn">适用对象</em>
+                <em class="lan-en hidden">The applicable objects</em>
+                </td>
+                <td>
+                  <p class="lan-cn">狗</p>
+                  <p class="lan-en hidden">dog</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn">适用范围</em>
+                <em class="lan-en hidden">Scope of application</em>
+                </td>
+                <td>
+                  <p class="lan-cn">小型犬</p>
+                  <p class="lan-en hidden">Small dogs</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <em class="lan-cn" >商品规格</em>
+                <em class="lan-en hidden">Product specifications</em>
+                </td>
+                <td>
+                  <p>25～40cm</p>
+                </td>
+              </tr>
+            </table>
+            <p class="lan-cn">本产品适用于10kg以下的泰迪贵宾等小型犬采用：</p>
+            <p class="lan-en hidden">This product is suitable for small dogs such as teddy poodles with less than 10kg:</p>
+            <p class="lan-cn">1:整个牵引带采用尼龙织带与细帆布的完美搭配，使产品 更牢固、更耐用、更美观 2：环保镀铬锌合金金属钩不生锈，坚固灵活，能够达到7 0kg以上的拉力强度，使用安全 3：熊头皮标环保无异味,表面光滑柔软，完美展示的产品 的高档大方。
+            </p>
+            <p class="lan-en hidden">1. The whole traction belt adopts the perfect combination of nylon ribbon and fine canvas to make the product stronger, more durable and more beautiful
+2: environmental chrome plated zinc alloy metal hook does not rust, strong flexibility, can reach more than 7 0 kg tensile strength, the use of safe 3: bear the environmental protection scalp without peculiar smell, surface smooth and soft, perfect show the products of high-grade and easy.
+ </p>
+            <p><img src="/images/shops/items.jpg" alt="" width="100%" height="100%" /></p>
+          </section>
+        </div>
+
+      </li>
+      <li>
+        <div class="main">
+          <section class="items-product-evaluation evalutaion-title-fixed">
+            <figure>
+              <h1>
+              <span class="lan-cn">评价</span>
+              <span class="lan-en hidden">evaluation</span>
+              (<em>31</em>)</h1>
+              <a href="#">
+              <span class="lan-cn">好评度</span>
+              <span class="lan-en hidden">rating</span>
+               <em>100%</em></a>
+            </figure>
+            <article class="pro_eval_type clearfix" id="evalution">
+              <a href="#" class="selected">全部 <em>1798</em></a>
+              <a href="#">
+              <span class="lan-cn">好评</span>
+              <span class="lan-en hidden">High praise</span>
+               <em>10 </em></a>
+              <a href="#">中评 <em>10 </em></a>
+              <a href="#">差评 <em>10 </em></a>
+              <a href="#">有图 <em>10</em></a>
+            </article>
+          </section>
+
+          <article class="evaluation-list product-eval-relative clearfix">
+            <div>
+              <div class="evaluation-list-cont">
+                <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                <div class="eval_text">
+                  <p><span>150***852</span><span>2018-5-21</span></p>
+                  <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                  <div class="eval_cont lan-cn">
+                    圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身
+                  </div>
+                  <div class="eval_cont lan-en hidden">
+                    Christmas gives you love dandle to change clothes selling sprouting, concave concave shape, have red pull wool and wool ball feel thick festal atmosphere, this paragraph only wear convenient cover on front foot can be completed
+</div>
+                  <p>
+                  <span class="lan-cn">黄底白色五角星</span>
+                  <span class="lan-en hidden">Yellow ground white star</span>
+                  <span class="lan-cn">购买日期：2018-03-03</span>
+                  <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                  </p>
+                </div>
+              </div>
+              <div class="evaluation-list-cont">
+                <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                <div class="eval_text">
+                  <p><span>150***852</span><span>2018-5-21</span></p>
+                  <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                  <div class="eval_cont lan-cn">
+                    圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身
+                  </div>
+                  <div class="eval_cont lan-en hidden">
+                    Christmas gives you love dandle to change clothes selling sprouting, concave concave shape, have red pull wool and wool ball feel thick festal atmosphere, this paragraph only wear convenient cover on front foot can be completed
+</div>
+                  <p>
+                  <span class="lan-cn">黄底白色五角星</span>
+                  <span class="lan-en hidden">Yellow ground white star</span>
+                  <span class="lan-cn">购买日期：2018-03-03</span>
+                  <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                  </p>
+                </div>
+              </div>
+              <div class="evaluation-list-cont">
+                <div class="eval_head"><img src="/images/shops/head.png" width="100%" height="100%" alt="" /></div>
+                <div class="eval_text">
+                  <p><span>150***852</span><span>2018-5-21</span></p>
+                  <p><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i><i class="iconfont icon-xing"></i></p>
+                  <div class="eval_cont lan-cn">
+                    圣诞节也给您的爱宠来款变身衣服卖卖萌，凹凹造型吧，红色的拉毛布加上毛绒球有没有感觉到浓浓的节日气息呢，本款穿戴方便只需套上前脚即可完成变身
+                  </div>
+                  <div class="eval_cont lan-en hidden">
+                    Christmas gives you love dandle to change clothes selling sprouting, concave concave shape, have red pull wool and wool ball feel thick festal atmosphere, this paragraph only wear convenient cover on front foot can be completed
+</div>
+                  <div class="eval_pic clearfix">
+                    <dl>
+                      <dt></dt>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                      <dd><img src="/images/shops/eval.jpg" /></dd>
+                    </dl>
+
+                  </div>
+                  <p>
+                  <span class="lan-cn">黄底白色五角星</span>
+                  <span class="lan-en hidden">Yellow ground white star</span>
+                  <span class="lan-cn">购买日期：2018-03-03</span>
+                  <span class="lan-en hidden">Purchase date: 2018-03-03</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+        </article>
+
+       </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<div class="main" style="display: none;">
+  <section class="items_goods_foot">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="iconfont icon-shoucang1"></i>
+          <p class="lan-cn">收藏</p>
+          <p class="lan-en hidden">collection</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="iconfont icon-shopcart"></i>
+          <p class="lan-cn">购物车</p>
+          <p class="lan-en hidden">The shopping cart</p>
+        </a>
+      </li>
+    </ul>
+    <div class="items-goods-apply">
+      <a href="#" class="lan-cn">立即购买</a>
+      <a href="#" class="lan-en hidden">Buy now</a>
+    </div>
+  </section>
+</div>
+<!--商品计算 加减点击  弹框提示-->
+<script type="text/javascript" src="/javascripts/view/shops/shops.js"></script>
+<!--商品图片切换-->
+<script src="/javascripts/view/index/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    resistance : true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+    paginationType: 'fraction'
+  });
+</script>
+<!--商品菜单切换-->
+<script type="text/javascript" src="/javascripts/view/shops/touchslider.js"></script>
+<script type="text/javascript" src="/javascripts/view/shops/goodstab.js"></script>
+</body>
+</html>

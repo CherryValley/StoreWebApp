@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/basic.css" />
+  <link rel="stylesheet" href="/stylesheets/iconfont.css" />
+  <script type="text/javascript" src="/javascripts/view/font.js"></script>
+  <script src="/javascripts/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/view/item/goodslist.css" />
+</head>
+<body bgcolor="#f5f1f9">
+<div class="main">
+  <article class="index_search goodslist_search">
+    <!--<span>爱宠族</span>-->
+    <a href="#" class="goodslist_arrow"><i class="iconfont icon-left-arrow"></i></a>
+    <p><input type="text" /><i class="iconfont icon-search"></i></p>
+    <a href="#" class="goodslist_text">
+    <span class="lan-cn">搜索</span>
+    <span class="lan-en hidden">search</span>
+    </span>
+      <!--<i class="iconfont icon-gouwuche1"></i>-->
+  </article>
+  <section class="goods_list_items" id="app">
+    <ul>
+      <li>
+        <div class="goodslist_img">
+          <img src="images/item/goods.jpg" width="100%" height="100%" alt="" />
+        </div>
+        <div class="goods_text">
+          <p><a href="#">
+          <span class="lan-cn">爱宠族 LUVPET 巴宝莉格子系列之米色狗用背带 巴宝莉格子米色 …</span>
+          <span class="lan-en hidden">Pet LUVPET burberry checked beige dog with back strap burberry checked beige...</span>
+          </a></p>
+          <h6><a href="#">￥12.6</a><span>39.00</span></h6>
+          <div class="addshoping"><i class="iconfont icon-gouwuche1"></i></div>
+        </div>
+      </li>
+      <li>
+        <div class="goodslist_img">
+          <img src="images/item/goods.jpg" width="100%" height="100%" alt="" />
+        </div>
+        <div class="goods_text">
+          <p><a href="#">
+          <span class="lan-cn">爱宠族 LUVPET 巴宝莉格子系列之米色狗用背带 巴宝莉格子米色 …</span>
+          <span class="lan-en hidden">Pet LUVPET burberry checked beige dog with back strap burberry checked beige...</span>
+          </a></p>
+          <h6><a href="#">￥12.6</a><span>39.00</span></h6>
+          <div class="addshoping"><i class="iconfont icon-gouwuche1"></i></div>
+        </div>
+      </li>
+      <li>
+        <div class="goodslist_img">
+          <img src="images/item/goods.jpg" width="100%" height="100%" alt="" />
+        </div>
+        <div class="goods_text">
+          <p><a href="#">
+          <span class="lan-cn">爱宠族 LUVPET 巴宝莉格子系列之米色狗用背带 巴宝莉格子米色 …</span>
+          <span class="lan-en hidden">Pet LUVPET burberry checked beige dog with back strap burberry checked beige...</span>
+          </a></p>
+          <h6><a href="#">￥12.6</a><span>39.00</span></h6>
+          <div class="addshoping"><i class="iconfont icon-gouwuche1"></i></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+<script src="/javascripts/view/item/zepto.min.js"></script>
+<script type="text/javascript" src="/javascripts/view/item/PullToRefresh.min.js"></script>
+<script>
+  var n=0,flag=true;
+  function appendTestData(){
+    return "<li><div class='goodslist_img'><img src='images/item/goods.jpg' alt=''/></div><div class='goods_text'><p><a href='#'>爱宠族 LUVPET 巴宝莉格子系列之米色狗用背带 巴宝莉格子米色 …</a></p><h6><a href='#'>￥12.6</a><span>39.00</span></h6><div class='addshoping'><i class='iconfont icon-gouwuche1'></i></div></div></li>"
+  }
+  function addhtml(type){
+//console.log("第"+n+"次加载成功")
+//$(".tip").html("第"+n+"次")
+    $("#app ul")[type](appendTestData()+appendTestData()+appendTestData()+appendTestData())
+  }
+  var refreshBox=new PullToRefresh({
+    container:"#app",
+    pull:{
+      callback:function(){
+        setTimeout(function(){
+          n=0
+          addhtml("html")
+          refreshBox.endPullRefresh(true)
+        },1000)
+      }
+    },
+    up:{
+      callback:function(){
+        setTimeout(function(){
+          if(n<5){
+            n++
+            addhtml("append")
+            refreshBox.endUpLoading(true)
+          }else{    //没有数据
+            refreshBox.endUpLoading(false)
+          }
+        },1000)
+      }
+    }
+  })
+</script>
+</body>
+</html>
